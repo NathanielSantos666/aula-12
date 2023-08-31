@@ -1,0 +1,87 @@
+// A. INTERPRETAÇÃO DE CÓDIGO
+// 1.a: os números 2 e 10 multiplicados por 5 (10 e 50)
+// 1.b: não apareceria nada
+
+// 2.a: entrega um prompt para o usuário inserir um texto, e o texto inserido será convertido para
+// lowercase e a função irá inspencionar o texto inserido para ver se inclui a palavra 'cenoura'
+// 2.b: I: true, II: 'cenoura é bom pra vista' e true, III: false
+//-------------------------------------------------
+
+// B. ESCRITA DE CÓDIGO
+//1.a:
+// function infoUsuario() {
+//     console.log('Eu sou Nathaniel, tenho 16 anos, moro no Rio Grande do Sul e sou estudante.');
+// }
+// infoUsuario();
+
+//1.b:
+// function frase(nome, idade, endereço, profissão) {
+//     const fraseUsuario = `Ola, sou ${nome} e tenho ${idade} anos, moro no ${endereço} e sou ${profissão}`;
+//     return fraseUsuario;
+// }
+// console.log(frase('Nathaniel', 16, 'RS', 'estudante'));
+//-------------------------------------------------
+
+//2.a:
+// function numeros(numero1, numero2) {
+//     return numero1 + numero2;
+// }
+// console.log(numeros(3, 6));
+
+//2.b:
+// function numeros(numero1, numero2) {
+//     return (numero1 >= numero2);
+// }
+// console.log(numeros(3, 3));
+
+//2.c:
+// function numeroParImpar(numero) {;
+//     return (numero % 2 === 0);
+// }
+// console.log(numeroParImpar(5));
+
+// //2.d:
+// function msg(texto) {
+//     texto = texto.toString().toUpperCase();
+//     return texto.length + " " + texto;
+// }
+// console.log(msg('textinho'));
+
+// //3.
+function operacaoSoma(soma1, soma2) {
+    let soma = soma1 + soma2;
+    return soma;
+}
+
+function operacaoSub(sub1, sub2) {
+    let sub = sub1 - sub2;
+    return sub;
+}
+
+function operacaoMulti(multi1, multi2) {
+    let multi = multi1 * multi2;
+    return multi;
+}
+
+ function operacaoDiv(div1, div2) {
+    let div = div1 / div2;
+    return div;
+}
+
+// console.log('soma:', operacaoSoma(30, 3));
+// console.log('subtração:', operacaoSub(30, 3));
+// console.log('multiplicação:', operacaoMulti(30, 3));
+// console.log('divisão:', operacaoDiv(30, 3));
+//-------------------------------------------------
+
+//o bagulho la
+
+let opção = Number(prompt('1. Adição \n 2. Subtração \n 3. Multiplicação \n 4. Divisão \n Digite um número.'));
+let a = Number(prompt('Digite um número.'));
+let b = Number(prompt('Digite outro número.'));
+
+funcao = opção === 1 ? console.log(operacaoSoma(a,b)) :
+opção === 2 ? console.log(operacaoSub(a,b)) :
+opção === 3 ? console.log(operacaoMulti(a,b)) :
+opção === 4 ? console.log(operacaoDiv(a,b)) : 
+console.log("fim do programa");
